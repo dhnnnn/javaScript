@@ -24,3 +24,28 @@ Berikut adalah beberapa topik yang dibahas dalam repository ini:
 - Modular JavaScript dan ES6 Features (dalam proses)
 
 - DOM Lanjutan dan Web API (dalam proses)
+  
+## 🛠️ Cara Menggunakan
+
+1. Clone repository ini dengan perintah:
+git clone
+lalu masuk ke foldernya:
+
+2. Buka file HTML atau JavaScript menggunakan browser atau code editor seperti VS Code.
+
+3. Pelajari file dari urutan yang telah disusun sesuai dengan urutan pembelajaran di video.
+
+
+## 🎯Tujuan Pribadi:
+
+- Membangun fondasi JavaScript yang kuat
+
+- Membiasakan diri dengan praktik coding modern
+
+- Mempersiapkan diri untuk belajar framework seperti React, Vue, atau Next.js
+
+## 🙏 Kredit
+
+Tutorial lengkap dapat ditonton di channel YouTube [Programmer Zaman Now](https://www.youtube.com/@ProgrammerZamanNow/courses) dengan judul playlist "Belajar JavaScript".
+
+Catatan: Repository ini dibuat murni untuk keperluan dokumentasi dan pembelajaran pribadi. Semua hak cipta konten video dimiliki oleh Programmer Zaman Now.
