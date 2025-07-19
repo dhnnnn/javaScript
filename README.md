@@ -28,12 +28,14 @@ Berikut adalah beberapa topik yang dibahas dalam repository ini:
 ## 🛠️ Cara Menggunakan
 
 1. Clone repository ini dengan perintah:
-git clone
+```
+git clone https://github.com/dhnnnn/javaScript.git
+```
 lalu masuk ke foldernya:
 
-2. Buka file HTML atau JavaScript menggunakan browser atau code editor seperti VS Code.
+3. Buka file HTML atau JavaScript menggunakan browser atau code editor seperti VS Code.
 
-3. Pelajari file dari urutan yang telah disusun sesuai dengan urutan pembelajaran di video.
+4. Pelajari file dari urutan yang telah disusun sesuai dengan urutan pembelajaran di video.
 
 
 ## 🎯Tujuan Pribadi:
