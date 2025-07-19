@@ -32,7 +32,9 @@ Berikut adalah beberapa topik yang dibahas dalam repository ini:
 git clone https://github.com/dhnnnn/javaScript.git
 ```
 lalu masuk ke foldernya:
-
+```
+cd 
+```
 3. Buka file HTML atau JavaScript menggunakan browser atau code editor seperti VS Code.
 
 4. Pelajari file dari urutan yang telah disusun sesuai dengan urutan pembelajaran di video.
