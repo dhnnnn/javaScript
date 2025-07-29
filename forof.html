@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // hanya bisa di looping array dan object
+    
+        const names = ["dhani", "dwi", "putra", 1234];
+
+        for(const name of names){
+            document.writeln(`<p>${name}</p>`);
+        }
+
+        const fullname = "Dhani dwi putra";
+        for(const character of fullname){
+            document.writeln(`<p>${character}</p>`);
+        }
+    </script>
+</body>
+</html>
