@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566
+        };
+        
+        //tanpa with statement
+        console.log(person.firstName);
+        console.log(person.lastName);
+        console.log(person.id);
+
+
+        //menggunakan with statement
+        with(person){
+            console.log(firstName);
+            console.log(lastName);
+            console.log(id);
+        }
+
+
+        //namun with statement tidak di rekomendasikan
+        // => hal ini dikarenakan with statement kadang membuat sebuah kode menjadi ambigu
+
+        //contoh : 
+
+        const firstName = "Budi";
+        const lastName = "dwi";
+
+        with(person){
+            console.log(firstName);
+            console.log(lastName);
+            console.log(id);
+        }
+
+        //hall ini akan menjadi ambigu jika sekilas membaca untuk frist name memanggil dari variablenya 
+
+    </script>
+</body>
+</html>
