@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //membuat function param dan return value
+        function sayHello(fristName, lastName){
+            const say = `hello ${fristName} ${lastName}`;
+            return say;
+        }
+
+        //tampung function kedalam variable
+        const result = sayHello("Dhani", "Putra")
+        console.log(result)
+
+
+        //menggunakan if dalam function
+        function getFinal(value){
+            if(value >= 80){
+                return "A"
+            }else if(value >= 70){
+                return "B"
+            }else if(value >= 60){
+                return "C"
+            }else if(value >= 50){
+                return "D"
+            }else{
+                return "E"
+            }
+        }
+        const nilai = getFinal(100)
+        console.log(nilai)
+    </script>
+</body>
+</html>
