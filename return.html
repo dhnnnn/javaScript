@@ -34,6 +34,24 @@
         }
         const nilai = getFinal(100)
         console.log(nilai)
+
+
+
+        //menghintikan perulangan menggunakan return
+        function isContent(array, searchValue){
+            for (const element of array){
+                if(element === searchValue){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1,2,3,4,5];
+        const search = 6;
+        const found = isContent(array, search);
+        console.info(`<p>${found}</p>`);
+
     </script>
 </body>
 </html>
