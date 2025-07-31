@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHelo(name) {
+            document.writeln(`hello ${name}`);
+        }
+
+        sayHelo("John");
+
+        const say = sayHelo; //jangan menggunakan () dikarenakan ini bukan memanggil function
+        say("budi");
+
+
+        function giveMeName(callback){
+            callback("Eko"); //sayHello("Eko");
+        }
+
+        giveMeName(sayHelo);
+        giveMeName(say);
+    </script>
+</body>
+</html>
