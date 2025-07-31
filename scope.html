@@ -6,6 +6,63 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        //scope adalah area akses sebuah data
+        //global scope dan local scope
+
+
+
+        //global scope
+        let counter = 0;
+
+
+        //global scope
+        function hitMe (){
+            //local scope hitMe
+
+            counter++;
+        }
+        
+
+        //global scope
+        function other (){
+            //local sope other
+        }
+
+        hitMe()
+        hitMe()
+
+        console.info(counter);
+
+
+        function frist (){
+            //local scope frist
+            let fristVariable = "frist";
+
+
+            //bisa diakses lokal hanya di dalam frist
+            function fristNasted(){
+                console.info(fristVariable);
+                const fristNastedVariable = "Frist Nested";
+            }
+
+            fristNasted();
+            console.info(fristVariable);
+        }
+
+        function second (){
+            //local scope second
+            let secondVariable = "second";
+        }
+
+        frist();
+        second();
+
+        
+        //global scope
+        //console.info(fristVariable); // ini akan menyebabkan eror, scope global mengakses local scope
+
+
+    </script>
 </body>
 </html>
