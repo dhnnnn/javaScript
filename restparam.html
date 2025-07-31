@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ketentuan rest parameter
+        //1. hanya boleh ada satu di function, tidak boleh lebih dari satu
+        //2. hanya boleh berada di posisi paling akkhir, tidak boleh di gunakan di functiont pertama ataupun ke dua. harus tertakhir
+
+
+        function sum (name, ...data) {
+            let total = 0;
+            for (const item of data){
+                total += item;
+            }
+            document.writeln(`Total ${name} adalah ${total}`)
+        }
+
+        sum("orange", 10, 20, 10, 109, 907); //rest parameter bisa sebanyak banyaknya 
+        sum("aple", 10, 20, 10, 2139, 907);
+        sum("banana", 10, 20, 10, 112309, 90721);
+
+        const values = [2314, 12341, 21, 21];
+        sum("test", ...values); // menggunakan spread syntax .x3 akan mengkonfersi array ke rest param
+  
+        
+
+
+        function oldSum(){
+            let total = 0;
+            for(const argument of arguments){
+                total += argument;
+            }
+            document.writeln(`total is ${total}`);
+        }
+
+        oldSum(10,10,1231,354,12);
+    </script>
+</body>
+</html>
