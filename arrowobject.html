@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrow function tidak bisa digunakan untuk mengsesk:
+        //1. arguments object
+        //2. function generator
+        //3. kata kunci this
+        //4. kata kunci super
+
+        const person = {
+            name: "eko",
+            sayhelo: (name) => {
+                console.info(this);
+                console.log(`hello ${name}`);
+            }
+        };
+
+        person.sayhelo("eko");
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(this); //window
+
+        function sample(){
+            console.log(this); //window
+
+            function inner(){
+                console.log(this); //window
+            }
+        }
+        sample();
+
+
+        const person = {
+            name : "eko",
+            sayHello : function(value){
+                console.log(`hello ${value}, my name is ${this.name}`); //person
+            }
+        }
+        person.sayHello("Budi");
+    </script>
+</body>
+</html>
