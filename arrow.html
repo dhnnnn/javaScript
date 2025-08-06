@@ -6,6 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        //kekurangannya :
+        //1. tidak memmiliki fitur arguments object
+        //2. tidak bisa menggunakan function generator
+        //3. tidak bisa mnegakses this
+        //4. tidak bisa mengakses super
+         
+
+        //menggunakan block function
+        const sayHello = (name) => {
+            const say = `hello ${name}`;
+            console.info(say);
+        }
+
+        //tanpa block function
+        //const sayGoodBye = (name) => console.info(`Byee ${name}`);
+        const sayGoodBye = name => console.info(`Byee ${name}`);
+        
+        // const sum = (frist, second) => {
+        //     return frist + second;
+        // }
+
+        const sum = (frist, second) => frist + second;
+
+        console.log(sum(1,2));
+
+        
+        
+
+
+        sayHello("eko");
+        sayGoodBye("eko");
+    </script>
 </body>
 </html>
