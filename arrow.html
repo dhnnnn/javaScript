@@ -30,10 +30,19 @@
 
         const sum = (frist, second) => frist + second;
 
-        console.log(sum(1,2));
+        console.log(sum(10,20));
+        
+        function givemename(callback){
+            callback("eko");
+        }
 
-        
-        
+        //anonym function
+        // givemename(function(name){
+        //     console.log(name);
+        // });
+
+        //arrow function
+        givemename(name => console.log(name));
 
 
         sayHello("eko");
