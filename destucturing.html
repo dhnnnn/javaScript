@@ -7,7 +7,121 @@
 </head>
 <body>
     <script>
-        
+
+        //normal
+        {
+            const names = ["eko", "kurniawan", "kanedi"];
+
+            const fristname = names[0];
+            const middlename = names[1];
+            const lastname = names[2];
+
+            console.log(fristname);
+            console.log(middlename);
+            console.log(lastname);
+        }
+
+
+        //menggunakan destucturing array
+        {
+            const name = ["eko", "kurniawan", "kanedi"];
+
+            const [fristnames, middlenames, lastnames, ...others] = names;
+
+            console.log(fristnames);
+            console.log(middlenames);
+            console.log(lastnames);
+        }
+
+        //mengambil data di object
+        {
+            const person = {
+                fristname: "eko",
+                middlename: "kurniawan",
+                lastname: "kanedi",
+                address: {
+                    street: "jalan merdeka",
+                    city: "jakarta",
+                    country: "Indonesia"
+                },
+                hobby: "game",
+                chennel: "apa aja"
+            };
+
+            let {fristname, middlename, lastname, address: {street, city, country}, hobby, chennel, ...others} = person;
+
+            console.log(fristname);
+            console.log(middlename);
+            console.log(lastname);
+            console.log(address);
+        }
+
+        //destructuring function
+        {
+            function displayperson({fristname,middlename, lastname}){
+                console.info(fristname);
+                console.info(middlename);
+                console.info(lastname);
+            }
+
+            const person = {
+                fristname: "eko",
+                middlename: "kurniawan",
+                lastname: "kanedi",
+            }
+
+            displayperson(person);
+        }
+
+
+        //destucturing array
+        {
+            function sum([frist, second]){
+                return frist + second;
+            }
+
+            console.info(sum([1,3]));
+        }
+
+        //default value
+        {
+            function sum([frist, second = 0]){
+                return frist + second;
+            }
+
+            console.info(sum([1,3]));
+        }
+
+        //default value object
+        {
+            const person = {
+                fristname: "eko",
+                middlename: "kurniawan",
+            };
+
+            let {fristname, middlename, lastname = "putra", ...others} = person;
+
+            console.log(fristname);
+            console.log(middlename);
+            console.log(lastname);
+        }
+
+        //menggunakan nama variable lain
+        {
+            const person = {
+                fristname: "eko",
+                middlename: "kurniawan",
+            };
+
+            let {fristname: namadepan, 
+                middlename: namatengah,  
+                lastname = "putra"
+            } = person;
+
+            console.log(namadepan);
+            console.log(namatengah);
+            console.log(lastname);
+        }
     </script>
 </body>
 </html>
