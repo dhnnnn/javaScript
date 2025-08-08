@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //saat kita menjalankan kode program java script, secara default kode pogram kita berjalan dalam modem tidak strict, atau istilahnya sloppy mode
+        
+        //jia ini jalankan maka akan :
+        //1. merubah beberapa js error dari yang tadinya silent error, menjadi throw eror(terlihat)
+        //2. memperbaiki beberapa kesalahan engine js untuk optimasi
+        //3. menolak beberapa kode perintah yang kedepanya akan digunakan di ECMAScript
+
+
+        function usestrict(){
+            `use strict`
+            const person = {
+                firtname: "eko"
+            };
+
+            //errorr
+            with(person){
+                console.console.log((firtname));
+            }
+        }
+
+    </script>
+</body>
+</html>
