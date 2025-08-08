@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //maslaah pada variable var
+        //why???
+        //tidak di rekomendasikan dikarenakan tidak memiliki block scope, artinya tidak mengikat ke local scope yang sebelumnya
+        //karenaa masalah ini, var tidak bisa di prediksi
+        
+        //global scope
+        let i = 20;
+
+        for (let i = 0; i < 10; i++) {
+            //local scope
+            console.log(`local : ${i}`);
+        }
+
+        console.log("global : " + i);
+    </script>
+</body>
+</html>
